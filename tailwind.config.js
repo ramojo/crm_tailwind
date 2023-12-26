@@ -1,8 +1,8 @@
 
 module.exports = {
   content: [
-    './templates/**/*.html',
-    './templates/**/*.html',
+    './main_crm/templates/**/*.html',
+    './main-crm/templates/**/*.html',
     './node_modules/flowbite/**/*.js'
   ],
   theme: {
