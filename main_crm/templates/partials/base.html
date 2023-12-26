@@ -10,9 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CRM with Django + Tailwind CSS + Flowbite</title>
     <link rel="shortcut icon" href="{% static 'src/images/favicon.ico' %}" type="image/x-icon">
-    {% compress css %}
+    {% comment %} {% compress css %} {% endcomment %}
         <link rel="stylesheet" href="{% static 'src/styles.css' %}">
-    {% endcompress %}
+    {% comment %} {% endcompress %} {% endcomment %}
 
 </head>
 
