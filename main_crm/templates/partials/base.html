@@ -1,0 +1,33 @@
+{% load compress %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CRM with Django + Tailwind CSS + Flowbite</title>
+    <link rel="shortcut icon" href="{% static 'src/images/favicon.ico' %}" type="image/x-icon">
+    {% compress css %}
+        <link rel="stylesheet" href="{% static 'src/styles.css' %}">
+    {% endcompress %}
+
+</head>
+
+<body>
+    {% include 'partials/nav.html' %}
+    
+    
+    
+    <div class="container mx-auto mt-4">
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    {% comment %} <script src="node-modules/flowbite/dist/flowbite.min.js"></script> {% endcomment %}
+</body>
+
+</html>
