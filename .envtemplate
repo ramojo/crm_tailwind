@@ -1,0 +1,11 @@
+# Secret Key
+SECRET_KEY=django-secret-key-you-generate
+
+
+# Database: Postgres is assumed to be the DB of choice. Change appropriately for other DB choices
+DATABASE_ENGINE=django.db.backends.postgresql
+DATABASE_NAME=dbname
+DATABASE_USER=dbuser
+DATABASE_PASSWORD=dbpassword
+DATABASE_HOST=localhost
+DATABASE_PORT=5432
